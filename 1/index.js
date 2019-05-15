@@ -1,5 +1,6 @@
+var Web3 = require('web3');
+web3 = new Web3('http://localhost:7545');
 
-web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"))
 var account;
 web3.eth.getAccounts().then((f) => {
  account = '0x5f12b507298abb47D3fa75954208e6ec7687a3A8';
